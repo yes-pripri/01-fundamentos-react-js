@@ -1,16 +1,17 @@
-import styles from './Post.module.css';
+import { Avatar } from './Avatar';
 import { Comment } from './Comment';
+import styles from './Post.module.css';
 
-export function Post() {
+
+export function Post({author}) {
     return (
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img className={styles.avatar} src='https://avatars.githubusercontent.com/u/87504113?v=4'
-                    />
+                    <Avatar src={author.avatarUrl} />
                     <div className={styles.authorInfo}>
-                        <strong>Kathelen Priscila</strong>
-                        <span>Web Developer</span>
+                        <strong>{author.name}</strong>
+                        <span>{author.role}</span>
                     </div>
                 </div>
                 <time title="27 de Fevereiro às 4:10"    dateTime='2023-02-27 06:16'>Publicado há 1hr</time>
