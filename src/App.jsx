@@ -2,8 +2,8 @@ import { Header } from "./components/Header";
 import { Post } from "./components/Post";
 import { Sidebar } from "./components/Sidebar";
 
-import batman from "./assets/bat-profile.png";
 
+import batman from "./assets/bat-profile.png";
 import styles from "./App.module.css";
 import './global.css';
 
