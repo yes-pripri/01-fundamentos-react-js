@@ -1,9 +1,10 @@
+import { format } from 'date.fns';
 import { Avatar } from './Avatar';
 import { Comment } from './Comment';
 import styles from './Post.module.css';
 
-
-export function Post({author}) {
+export function Post({author, publishedAt}) {
+    const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:'mm'h'")
     return (
         <article className={styles.post}>
             <header>
@@ -14,7 +15,9 @@ export function Post({author}) {
                         <span>{author.role}</span>
                     </div>
                 </div>
-                <time title="27 de Fevereiro às 4:10"    dateTime='2023-02-27 06:16'>Publicado há 1hr</time>
+                <time title="27 de Fevereiro às 4:10" dateTime='2023-02-20 06:16'>
+                    {publishedDateFormatted}
+                </time>
             </header>
             <div className={styles.content}>
                 <p>Fala galera!!</p>

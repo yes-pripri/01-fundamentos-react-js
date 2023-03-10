@@ -5,6 +5,7 @@ import styles from "./App.module.css";
 import './global.css';
 
 import batman from './assets/batman.png';
+import jujuba from './assets/jujuba.png';
 
 // author; {avatar_url: ""}, name: "", role:""}
 //publishedAt: Date 
@@ -14,7 +15,7 @@ const posts = [
   {
     id: 1,
     author: {
-      avatarUrl: 'https://avatars.githubusercontent.com/u/87504113?v=4',
+      avatarUrl: jujuba,
       name: 'Princesa Jujuba',
       role: 'Web Developer'
     },
