@@ -4,7 +4,7 @@ import { Sidebar } from "./components/Sidebar";
 import styles from "./App.module.css";
 import './global.css';
 
-import batman from './assets/batman.png';
+import marceline from './assets/marceline.png';
 import jujuba from './assets/jujuba.png';
 
 // author; {avatar_url: ""}, name: "", role:""}
@@ -29,8 +29,8 @@ const posts = [
   {
     id: 2,
     author: {
-      avatarUrl: batman,
-      name: 'Bruce Wayne',
+      avatarUrl: marceline,
+      name: 'Marceline',
       role: 'Fullstack Developer',
     },
     content: [
